@@ -1,5 +1,6 @@
 package me.abhishekraj.portfolioapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -33,26 +34,44 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.popularMovies:
                 Toast.makeText(MainActivity.this, getResources().getString(R.string.popularMoviesButtonToast),
                         Toast.LENGTH_SHORT).show();
+                Intent popularMoviesIntent = new Intent(MainActivity.this, ProjectDetailsActivity.class);
+                popularMoviesIntent.putExtra("intentExtra", "This is Popular Movies Project");
+                startActivity(popularMoviesIntent);
                 break;
             case R.id.stockHawk:
                 Toast.makeText(MainActivity.this, getResources().getString(R.string.stackHawkButtonToast),
                         Toast.LENGTH_SHORT).show();
+                Intent stockHawkIntent = new Intent(MainActivity.this, ProjectDetailsActivity.class);
+                stockHawkIntent.putExtra("intentExtra", "This is StockHawk Project");
+                startActivity(stockHawkIntent);
                 break;
             case R.id.buildItBigger:
                 Toast.makeText(MainActivity.this, getResources().getString(R.string.buildItBiggerButtonToast),
                         Toast.LENGTH_SHORT).show();
+                Intent buildItBiggerIntent = new Intent(MainActivity.this, ProjectDetailsActivity.class);
+                buildItBiggerIntent.putExtra("intentExtra", "This is Build It Bigger Project");
+                startActivity(buildItBiggerIntent);
                 break;
             case R.id.makeYourAppMaterial:
                 Toast.makeText(MainActivity.this, getResources().getString(R.string.makeYourAppMaterialButtonToast),
                         Toast.LENGTH_SHORT).show();
+                Intent makeYourAppMaterialIntent = new Intent(MainActivity.this, ProjectDetailsActivity.class);
+                makeYourAppMaterialIntent.putExtra("intentExtra", "This is Make Your App Material Project");
+                startActivity(makeYourAppMaterialIntent);
                 break;
             case R.id.goUbiquitous:
                 Toast.makeText(MainActivity.this, getResources().getString(R.string.goUbiquitousButtonToast),
                         Toast.LENGTH_SHORT).show();
+                Intent goUbiquitousIntent = new Intent(MainActivity.this, ProjectDetailsActivity.class);
+                goUbiquitousIntent.putExtra("intentExtra", "This is Go Ubiquitous Project");
+                startActivity(goUbiquitousIntent);
                 break;
             case R.id.capstone:
                 Toast.makeText(MainActivity.this, getResources().getString(R.string.capstoneButtonToast),
                         Toast.LENGTH_SHORT).show();
+                Intent capstoneIntent = new Intent(MainActivity.this, ProjectDetailsActivity.class);
+                capstoneIntent.putExtra("intentExtra", "This is Capstone Project");
+                startActivity(capstoneIntent);
                 break;
             default:
                 Toast.makeText(MainActivity.this, getResources().getString(R.string.defaultToastMessage),
